@@ -41,6 +41,8 @@ dependencies {
     def kluent_version = "1.61"
     def mockk_version = "1.10.0"
     def admob_version = "19.1.0"
+    def nav_version = "2.3.0-alpha06"
+    def material_version = "1.1.0"
 
     implementation fileTree(dir: 'libs', include: ['*.jar'])
     implementation "org.jetbrains.kotlin:kotlin-stdlib-jdk7:$kotlin_version"
@@ -90,6 +92,21 @@ dependencies {
     androidTestImplementation "io.mockk:mockk-android:$mockk_version"
     //Admob, still need to add to manifest etc https://developers.google.com/admob/android/quick-start
     implementation "com.google.android.gms:play-services-ads:$admob_version"
+
+
+    //Navigation component
+    implementation "androidx.navigation:navigation-fragment-ktx:$nav_version"
+    implementation "androidx.navigation:navigation-ui-ktx:$nav_version"
+
+    // Dynamic Feature Module Support
+    implementation "androidx.navigation:navigation-dynamic-features-fragment:$nav_version"
+
+    // Testing Navigation
+    androidTestImplementation "androidx.navigation:navigation-testing:$nav_version"
+
+    //new material design
+    implementation "com.google.android.material:material:$material_version"
+
 
 
 
