@@ -92,7 +92,7 @@ dependencies {
     testImplementation "io.mockk:mockk:$mockk_version"
     androidTestImplementation "io.mockk:mockk-android:$mockk_version"
     //Admob, still need to add to manifest etc https://developers.google.com/admob/android/quick-start
-    implementation "com.google.android.gms:play-services-ads:$admob_version"
+   // implementation "com.google.android.gms:play-services-ads:$admob_version"
 
 
     //Navigation component
